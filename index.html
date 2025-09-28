@@ -5,33 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Milk Tracker</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            line-height: 1.7; color: #333; 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh; padding: 20px; 
+            min-height: 100vh;
+            padding: 20px;
         }
         .container {
-            max-width: 900px; margin: 40px auto; background: white; 
-            padding: 50px; border-radius: 15px; 
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            padding: 50px;
+            border-radius: 15px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
-        .header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 3px solid #2E7D32; }
-        .app-icon {
-            width: 80px; height: 80px; margin-bottom: 20px; border-radius: 20px;
-            background: #2E7D32; display: inline-flex; align-items: center; 
-            justify-content: center; color: white; font-size: 24px; font-weight: bold;
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #2E7D32;
         }
-        h1 { color: #2E7D32; font-size: 2.5em; margin-bottom: 10px; }
-        h2 { color: #2E7D32; margin: 30px 0 15px 0; padding-bottom: 10px; border-bottom: 2px solid #E8F5E9; }
-        h3 { color: #1B5E20; margin: 20px 0 10px 0; }
-        p { margin-bottom: 15px; text-align: justify; }
-        ul { margin: 15px 0; padding-left: 30px; }
-        li { margin-bottom: 8px; }
-        .highlight { background: #E8F5E9; padding: 15px; border-left: 4px solid #2E7D32; margin: 20px 0; border-radius: 5px; }
-        .contact-info { background: #F1F8E9; padding: 20px; border-radius: 10px; margin: 30px 0; }
-        .footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; color: #666; }
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 25px;
+            border-radius: 25px;
+            background: #2E7D32;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            box-shadow: 0 10px 20px rgba(46, 125, 50, 0.3);
+        }
+        h1 {
+            color: #2E7D32;
+            font-size: 3em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #2E7D32;
+            margin: 40px 0 20px 0;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #E8F5E9;
+            font-size: 1.8em;
+        }
+        h3 {
+            color: #1B5E20;
+            margin: 25px 0 15px 0;
+            font-size: 1.4em;
+        }
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 1.1em;
+        }
+        ul {
+            margin: 20px 0;
+            padding-left: 40px;
+        }
+        li {
+            margin-bottom: 12px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .highlight {
+            background: #E8F5E9;
+            padding: 25px;
+            border-left: 6px solid #2E7D32;
+            margin: 30px 0;
+            border-radius: 8px;
+            font-size: 1.1em;
+        }
+        .contact-info {
+            background: #F1F8E9;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0;
+            border: 2px solid #C8E6C9;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #ddd;
+            color: #666;
+            font-size: 1.1em;
+        }
+        .note-box {
+            background: #FFF3E0;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-left: 4px solid #FF9800;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+        .data-table th, .data-table td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+        .data-table th {
+            background: #2E7D32;
+            color: white;
+        }
+        .data-table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+                margin: 20px auto;
+            }
+            h1 {
+                font-size: 2.2em;
+            }
+            h2 {
+                font-size: 1.6em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -39,41 +149,182 @@
         <div class="header">
             <div class="app-icon">MT</div>
             <h1>Privacy Policy</h1>
-            <p><strong>Last Updated:</strong> January 2024</p>
+            <p class="subtitle">Milk Tracker - Your Complete Dairy Management Solution</p>
+            <p><strong>Last Updated:</strong> 28 September 2025</p>
+            <p><strong>Effective Date:</strong> 28 September 2025</p>
+        </div>
+
+        <div class="highlight">
+            <p><strong>📱 App Name:</strong> Milk Tracker<br>
+            <strong>👨‍💻 Developer:</strong> RK Developer<br>
+            <strong>📧 Contact Email:</strong> rkdeveloper197@gmail.com<br>
+            <strong>🌐 Website:</strong> https://rkdeveloper197.github.io</p>
         </div>
 
         <h2>1. Introduction</h2>
-        <p>Welcome to Milk Tracker ("we," "our," or "us"). We are committed to protecting your personal information and your right to privacy.</p>
+        <p>Welcome to Milk Tracker ("we," "our," or "us"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy policy, or our practices with regards to your personal information, please contact us at youremail@gmail.com.</p>
+        
+        <p>This Privacy Policy applies to all information collected through our Mobile Application ("Milk Tracker"), as well as any related services, sales, marketing or events.</p>
 
         <h2>2. Information We Collect</h2>
+        
+        <h3>2.1 Personal Information You Provide</h3>
+        <p>We collect personal information that you voluntarily provide to us when you register with the App, express an interest in obtaining information about us or our products and services, or otherwise when you contact us.</p>
+        
         <ul>
-            <li><strong>Google Account Information:</strong> Email address for authentication</li>
-            <li><strong>Milk Data:</strong> Milk quantity, fat percentage, rates</li>
-            <li><strong>App Usage:</strong> How you use our app</li>
+            <li><strong>Google Account Information:</strong> When you sign in with Google, we collect your email address, display name, and profile picture (if available) solely for authentication and account management purposes.</li>
+            <li><strong>Milk Production Data:</strong> We collect milk quantity (in liters), fat percentage, rate per fat unit, time of milking (day/night), animal type (buffalo/cow), and calculated amounts that you manually enter in the app.</li>
+            <li><strong>Date and Time Information:</strong> We collect the dates and timestamps when you add milk entries to generate accurate daily, weekly, and monthly reports.</li>
+            <li><strong>Payment Status:</strong> We store information about whether specific date ranges are marked as paid or unpaid for your reference.</li>
+        </ul>
+
+        <h3>2.2 Information Automatically Collected</h3>
+        <p>We automatically collect certain information when you visit, use, or navigate the App. This information does not reveal your specific identity but may include device and usage information:</p>
+        
+        <ul>
+            <li><strong>Device Information:</strong> We collect device information such as your mobile device ID, model, operating system version, and device language.</li>
+            <li><strong>Usage Information:</strong> We collect information about how you use our App, including features you use, time spent on different screens, and interaction patterns.</li>
+            <li><strong>Crash Reports and Performance Data:</strong> We collect crash logs, performance data, and error reports to improve app stability and user experience.</li>
+            <li><strong>Analytics Data:</strong> We collect anonymous analytics data to understand user behavior and improve our services.</li>
         </ul>
 
         <h2>3. How We Use Your Information</h2>
-        <p>We use the collected information for app functionality, calculations, and improving user experience.</p>
+        <p>We use personal information collected through our App for a variety of business purposes described below:</p>
+        
+        <ul>
+            <li><strong>To facilitate account creation and authentication:</strong> We use your Google account information to create and authenticate your account securely.</li>
+            <li><strong>To provide milk tracking services:</strong> We use your milk data to perform calculations, generate reports, and provide the core functionality of the app.</li>
+            <li><strong>To generate PDF reports:</strong> We use your data to create comprehensive PDF reports that you can download and share.</li>
+            <li><strong>To maintain and improve our App:</strong> We use usage data and analytics to identify bugs, improve performance, and enhance user experience.</li>
+            <li><strong>To provide customer support:</strong> We use your information to respond to your inquiries and solve any potential issues you might have with the use of our App.</li>
+            <li><strong>For business transfers:</strong> We may use your information in connection with a business transfer such as merger or sale of assets.</li>
+        </ul>
 
-        <h2>4. Third-Party Services</h2>
-        <p>We use Google Firebase for authentication, data storage, and analytics.</p>
+        <h2>4. Data Collection Summary</h2>
+        
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Purpose</th>
+                    <th>Collection Method</th>
+                    <th>Third-Party Sharing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Email Address</td>
+                    <td>Authentication & Account Management</td>
+                    <td>From User (Google Sign-In)</td>
+                    <td>Yes (Firebase)</td>
+                </tr>
+                <tr>
+                    <td>Milk Production Data</td>
+                    <td>Core App Functionality</td>
+                    <td>From User Input</td>
+                    <td>Yes (Firebase)</td>
+                </tr>
+                <tr>
+                    <td>Usage Analytics</td>
+                    <td>App Improvement</td>
+                    <td>Automatically Collected</td>
+                    <td>Yes (Firebase Analytics)</td>
+                </tr>
+                <tr>
+                    <td>Crash Reports</td>
+                    <td>Stability Improvement</td>
+                    <td>Automatically Collected</td>
+                    <td>Yes (Firebase Crashlytics)</td>
+                </tr>
+            </tbody>
+        </table>
 
-        <h2>5. Data Security</h2>
-        <p>Your data is stored securely in Google Firebase servers with encryption.</p>
+        <h2>5. Third-Party Services and Data Sharing</h2>
+        
+        <h3>5.1 Google Firebase Services</h3>
+        <p>We use Google Firebase, a platform developed by Google LLC, for the following services:</p>
+        
+        <ul>
+            <li><strong>Firebase Authentication:</strong> For secure user authentication using Google Sign-In.</li>
+            <li><strong>Cloud Firestore:</strong> For secure cloud-based data storage and synchronization.</li>
+            <li><strong>Firebase Analytics:</strong> For anonymous usage analytics and user behavior tracking.</li>
+            <li><strong>Firebase Crashlytics:</strong> For real-time crash reporting and app stability monitoring.</li>
+        </ul>
+        
+        <p>These services are provided by Google LLC and are subject to Google's Privacy Policy available at: https://policies.google.com/privacy</p>
 
-        <h2>6. Your Rights</h2>
-        <p>You can delete your account and all data anytime from app settings.</p>
+        <h3>5.2 Data Sharing with Third Parties</h3>
+        <p>We may share your information with third parties in the following situations:</p>
+        
+        <ul>
+            <li><strong>With Service Providers:</strong> We may share your data with third-party vendors, service providers, contractors or agents who perform services for us or on our behalf.</li>
+            <li><strong>Business Transfers:</strong> We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</li>
+            <li><strong>With your Consent:</strong> We may disclose your personal information for any other purpose with your consent.</li>
+        </ul>
 
-        <h2>7. Contact Us</h2>
+        <div class="note-box">
+            <p><strong>Note:</strong> We do NOT sell your personal data to third parties. We only share data with trusted service providers necessary for app functionality.</p>
+        </div>
+
+        <h2>6. Data Storage and Security</h2>
+        
+        <h3>6.1 Data Storage</h3>
+        <p>Your data is stored securely in Google Firebase servers located in secure data centers. We implement appropriate technical and organizational security measures designed to protect the security of any personal information we process.</p>
+        
+        <h3>6.2 Data Security Measures</h3>
+        <ul>
+            <li>Data encryption in transit using SSL/TLS protocols</li>
+            <li>Secure authentication through Google Sign-In</li>
+            <li>Regular security updates and monitoring</li>
+            <li>Access controls and authentication mechanisms</li>
+        </ul>
+
+        <h2>7. Data Retention</h2>
+        <p>We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy policy, unless a longer retention period is required or permitted by law.</p>
+        
+        <p>You can delete your account and all associated data at any time through the App settings. When you delete your account, we will:</p>
+        <ul>
+            <li>Delete all your personal information from our active databases</li>
+            <li>Remove your milk production data and user preferences</li>
+            <li>Delete your authentication information</li>
+        </ul>
+
+        <h2>8. Your Privacy Rights</h2>
+        <p>You have certain rights regarding your personal information. You can:</p>
+        
+        <ul>
+            <li><strong>Access Your Data:</strong> View all your stored data within the App</li>
+            <li><strong>Correct Your Data:</strong> Edit and update your milk entries and personal information</li>
+            <li><strong>Delete Your Data:</strong> Permanently delete your account and all associated data</li>
+            <li><strong>Export Your Data:</strong> Download your data as PDF reports</li>
+            <li><strong>Withdraw Consent:</strong> Stop using the App and delete your account</li>
+        </ul>
+
+        <h2>9. International Data Transfers</h2>
+        <p>Your information may be transferred to and maintained on computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ from those of your jurisdiction. We ensure appropriate safeguards are in place for such transfers.</p>
+
+        <h2>10. Children's Privacy</h2>
+        <p>Our App is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us.</p>
+
+        <h2>11. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top of this Privacy Policy.</p>
+        
+        <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+
+        <h2>12. Contact Us</h2>
         <div class="contact-info">
-            <p>If you have questions about this Privacy Policy:</p>
+            <p>If you have any questions or concerns about this Privacy Policy, please contact us:</p>
             <ul>
-                <li>Email: rkdeveloper197@gmail.com</li>
+                <li><strong>Email:</strong> youremail@gmail.com</li>
+                <li><strong>Through the App:</strong> Settings → Contact Support</li>
+                <li><strong>Response Time:</strong> We typically respond within 24-48 hours</li>
             </ul>
+            <p>We will respond to your inquiry in a timely manner and address any concerns you may have about our use of your personal information.</p>
         </div>
 
         <div class="footer">
             <p>&copy; 2024 Milk Tracker. All rights reserved.</p>
+            <p>This privacy policy is compliant with Google Play Store requirements and applicable data protection laws.</p>
         </div>
     </div>
 </body>
